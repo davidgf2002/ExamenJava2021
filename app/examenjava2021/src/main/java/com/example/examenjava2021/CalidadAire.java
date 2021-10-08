@@ -94,6 +94,8 @@ public class CalidadAire {
             }
             System.out.println(mapeado);
         }
+
+        //Prueba del método registrado en la clase CalidadAire
     }
 
 }

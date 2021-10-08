@@ -44,6 +44,17 @@ public class MedidaCO2 {
         this.concentracionAula9 = concentracionAula9;
     }
 
+    public boolean registrado(List<MedidaCO2> listaDatos){
+        for (int i=0; i<listaDatos.size(); i++){
+            if(listaDatos.getConcentracionElectronica() && listaDatos.getConcentracionTelematica() && listaDatos.getConcentracionAula9()){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        return false;
+    }
+
     //Constructor
     public MedidaCO2(long tiempo, int concentracionElectronica, int concentracionTelematica, int concentracionAula9) {
         this.tiempo = tiempo;
