@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "ExamenJava2021"
 include ':app'
+include ':app:examenjava2021'
