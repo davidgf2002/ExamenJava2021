@@ -1,7 +1,9 @@
 package com.example.examenjava2021;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class CalidadAire {
     // Hora local Gandia Epoch del 7.10.2021 de las 8:00 am a las 17:00 pm
@@ -74,6 +76,24 @@ public class CalidadAire {
             medidasPPM.add(datos.getElectronica(), datos.getTelematica(), datos.getAula9());
         }
         System.out.println(medidasPPM);
+
+
+        Map<String,Integer> mapeado= new HashMap<>();
+        int contadorElectronica = 0;
+        int contadorTelematica = 0;
+        int contadorAula9 = 0;
+        for(MedidaCO2 puntero:datos){
+            if(datos.getElectronica()>800){
+                contadorElectronica++;
+            }
+            if(datos.getTelematica()>800){
+                contadorElectronica++;
+            }
+            if(datos.getAula9()>800){
+                contadorElectronica++;
+            }
+            System.out.println(mapeado);
+        }
     }
 
 }
