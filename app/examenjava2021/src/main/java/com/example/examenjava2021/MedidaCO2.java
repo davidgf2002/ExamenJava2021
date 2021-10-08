@@ -1,5 +1,7 @@
 package com.example.examenjava2021;
 
+import java.util.List;
+
 public class MedidaCO2 {
 
     //Declaración de los atributos
@@ -41,7 +43,6 @@ public class MedidaCO2 {
     public void setConcentracionAula9(int concentracionAula9) {
         this.concentracionAula9 = concentracionAula9;
     }
-
 
     //Constructor
     public MedidaCO2(long tiempo, int concentracionElectronica, int concentracionTelematica, int concentracionAula9) {
