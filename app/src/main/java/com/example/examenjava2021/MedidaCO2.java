@@ -3,14 +3,14 @@ package com.example.examenjava2021;
 public class MedidaCO2 {
 
     //Declaración de los atributos
-    private int tiempo;
+    private long tiempo;
     private int concentracionElectronica;
     private int concentracionTelematica;
     private int concentracionAula9;
 
 
     //Métodos Get y Set para acceder a los atributos
-    public int getTiempo() {
+    public long getTiempo() {
         return tiempo;
     }
 
@@ -44,10 +44,14 @@ public class MedidaCO2 {
 
 
     //Constructor
-    public MedidaCO2(int tiempo, int concentracionElectronica, int concentracionTelematica, int concentracionAula9) {
+    public MedidaCO2(long tiempo, int concentracionElectronica, int concentracionTelematica, int concentracionAula9) {
         this.tiempo = tiempo;
         this.concentracionElectronica = concentracionElectronica;
         this.concentracionTelematica = concentracionTelematica;
         this.concentracionAula9 = concentracionAula9;
+    }
+
+    public static void main(String[] args) {
+
     }
 }
